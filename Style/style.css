@@ -1,0 +1,1763 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*.............Header...........*/
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../Images/Home\ 3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding-left: 2%;
+    padding-right: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 200px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    font-weight: 700;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #2157f8;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.nav-links a:hover,
+.nav-links a.active{
+    color: #0bb1db;
+}
+.fa-user-circle{
+    color: white;
+    margin-right: 10px;
+}
+.log{
+    display: inline-block;
+    align-items: right;
+    justify-content: space-between;
+    padding-right: 0;
+    padding-left: 50%;
+}
+.log button{
+    border: 1px solid rgb(253, 253, 255);
+    padding: 4px 15px;
+    border-radius: 20px;
+    background-color: #fefefe;
+}
+
+.log .btnLogin-popup:hover{
+     background-color: #2157f8;
+     color: #fff;
+     border-color: #2157f8;
+     transition: 0.5s;
+}
+.log .btnSignUp-popup:hover{
+    background-color: #2157f8;
+    color: #fff;
+    border-color: #2157f8;
+    transition: 0.5s;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    
+}
+/*..........============search===============.......*/
+.text-box .box{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 285px;
+    width: 60%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    border-radius: 70px;
+    border: 2px solid rgb(13, 177, 232);
+    box-shadow: 0px 2px 20px rgb(7, 191, 232); 
+    z-index: 1;
+}
+
+.search_box table td .btn{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 90px;
+    height: 30px;
+    background-color: #16b2f5;
+    font-weight: 700;
+    color:#fff ;
+    box-shadow: 0px 2px 20px rgb(7, 191, 232);   
+}
+.search_box table td .btn:hover{
+    background-color: #f44336;
+    box-shadow: 0px 2px 20px rgb(206, 14, 14);
+    transition: .3s;
+}
+.box .search_box .inp{
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 10px;
+    width: 190px;
+    text-align: center;
+    height: 30px;
+}
+
+
+
+
+/*.........wave.........*/
+.w1{
+    position: relative;
+    width: 100%;
+    height: 22vh;
+    background-image: url(banner.png);
+    /*background: #3586ff;*/
+    overflow: hidden;
+}
+.w1 .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../Images/wave.png);
+    background-size: 1000px 100px;
+}
+.w1 .wave.wave1{
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+.w1 .wave.wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+.w1 .wave.wave3{
+    animation: animate 10s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+.w1 .wave.wave4{
+    animation: animate2 15s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes animate{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate2{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: -1000px;
+    }
+}
+
+
+/*.......footer.........*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer hr{
+    border: 1px solid gray;
+    opacity: 0.5;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p{
+    font-size: 12px;
+}
+.icons .fa{
+    color: #4333f5;
+    margin: 0;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o{
+    color: #f44336;
+}
+
+/*............Polpular destinations.....................*/
+
+
+.popular{
+    width: 80%;
+    margin-left: 85px;
+    text-align: center;
+    padding-top: 50px;
+}
+.popular h1{
+    margin-left: 135px;
+}
+
+tr .location-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+tr .location-col img{
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
+    width: 240px;   
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(31, 107, 236, 0.7); 
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*bottom home page*/
+.ctu{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../Images/Home\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.ctu h1{
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 7vh;
+    padding: 0;
+}
+.ctu .text{
+    color: #fff;
+    font-weight: 10;
+    
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 5px solid #fff;
+    border-radius: 30px;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: red;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.1s;
+}
+
+.botUl ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    margin-left: 170px;
+    margin-top: 18px;
+    font-size: 12px;
+}
+
+
+/*login*/
+
+
+.wrapper{
+
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: rgb(21, 19, 67);
+    border: 2px solid rgba(44, 41, 218, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(44, 41, 218, 0.5);
+    overflow: hidden;
+    display: flex;
+    margin-left: 40%;
+    
+    transform: scale(0);
+    transition:transform .4s ease, height .2s ease;
+}
+.wrapper.active-popup{
+    transform: scale(1);
+
+}
+.wrapper.active{
+    height: 520px;
+
+}
+.wrapper .form-box{
+
+    width: 80%;
+    padding: 40px;
+}
+.wrapper .form-box.login{
+    transition: transform .15s ease;
+    transform: translateX(0);
+}
+.wrapper.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+}
+.wrapper .form-box.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+    
+}
+.wrapper.active .form-box.register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #eb0808;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.form-box h2{
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border: 50px;
+    border-bottom: 2px solid #646562;
+    margin: 30px 0;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .3s;
+
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent ;
+    border: none;
+    outline: none;
+
+    font-size: 1em;
+    color: #f1ebeb;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #ffffff;
+    line-height: 57px;
+}
+.remember-forgot{
+
+    font-size: .9em;
+    color: #c8c8c8;
+    font-weight: 500;
+    margin: 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input{
+    accent-color: #838485;
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color: #cdcdcd;
+    text-decoration: none;
+}
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #2a59b8;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+.Login-register{
+    font-size: .9em;
+    color: #c3bcbc;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.Login-register p a {
+    color: #fffb03;
+    text-decoration: none;
+    font-weight: 600;
+}
+.Login-register p a:hover{
+    text-decoration: underline;
+}
+
+/*================location pg==================*/
+/*sub header*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../Images/Sri-Lanka-Beach-Cover.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 50px;
+    font-size: 40px;
+}
+.sub-header .inp{
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+}
+.sub-header .search{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 90px;
+    height: 30px;
+    background-color: #16b2f5;
+    font-weight: 700;
+    color:#fff ;
+    box-shadow: 0px 2px 20px rgb(7, 191, 232);
+}
+.sub-header .search:hover{
+    background-color: #f44336;
+    box-shadow: 0px 2px 20px rgb(206, 14, 14);
+    transition: .3s;
+}
+
+/*find destinations*/
+.destination{
+    text-align: center;
+}
+swiper-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    
+  }
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+swiper-slide a{
+    cursor: pointer;
+}
+/*bottom location page*/
+.bottom{
+    margin: 100px auto;
+    width: 1300px;
+    height: 500px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../Images/Home\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.bottom h3{
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 7vh;
+    padding: 0;
+}
+.bottom .inp{
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+}
+.bottom .search{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 90px;
+    height: 30px;
+    background-color: #16b2f5;
+    font-weight: 700;
+    color:#fff ;
+    box-shadow: 0px 2px 20px rgb(7, 191, 232);
+}
+.bottom .search:hover{
+    background-color: #f44336;
+    box-shadow: 0px 2px 20px rgb(206, 14, 14);
+    transition: .3s;
+}
+.bottom img{
+    height: 300px;
+  
+}
+
+/*.................Travel page..................*/
+
+.sub-headerT{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../Images/airport-car-service.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-headerT h1{
+    margin-top: 50px;
+    font-size: 40px;
+}
+.top table{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+} 
+.top table td{
+    padding-right: 200px;
+    padding-left: 200px;
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+
+.partners{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.partners img{
+    width: 150px;
+    height: 150px;  
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.top .time a{
+    text-decoration: none;
+    color: #000000;
+}
+.top .car a{
+    text-decoration: none;
+    color: #000000; 
+}
+/*individual location page*/
+.sub-headerL{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../Images/kandy_Cover.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-headerL h1{
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.test .box-container{
+    display: flex;
+    justify-content: space-between;
+}
+.test .box{
+    flex: 1;
+    /*border: 1px solid black;*/
+    padding: 10px;
+}
+.test .box-container li{
+    list-style-type: none;
+}
+.test .box-container img{
+    width: 70px;
+    height: 70px;
+}
+.test .box-container .box{
+    padding-left: 200px;   
+}
+.test .box-container iframe{
+    width: 500px;
+    height: 269px;
+}
+.box a{
+    text-decoration: none;
+    color: #000000;
+}
+.box-container .box li .train{
+    width: 500px;
+    height: 300px;
+}
+.hotels{
+    text-align: center;
+}
+.hotel-container img{
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+}
+.hotel-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    font-size: 12px;
+}
+.find2 .hero-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 600px;
+    margin-right: 600px;
+}
+
+/*........About us page...................................*/
+
+.sub-headerA{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../Images/kandy_Cover.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-headerA h1{
+    margin-top: 50px;
+    font-size: 40px;
+}
+.About h3{
+    font-weight: 220;
+}
+.About h2{
+    text-align: center;
+    color: #060ba0;
+    font-weight: 400;
+}
+.About p{
+    font-size: 12px;
+}
+/*........Booking page...................................*/
+
+.sub-headerB{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../Images/kandy_Cover.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-headerB h1{
+    margin-top: 50px;
+    font-size: 40px;
+}
+.form-group input{
+    border-radius: 5px;
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fill{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+.p{
+   margin-left: -50px;
+   text-align: center;
+    
+}
+.continue{
+    color: #ffffff;
+    background-color: #0bb1db;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+.popup{
+    text-align: center;
+}
+.popup input{
+    width: 250px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+
+
+/*.............book now............*/
+
+
+.sub-headerBook{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../Images/kandy_Cover.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-headerBook h1{
+    margin-top: 50px;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.sub-headerBook .text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sub-headerBook .description{
+    font-size: 10px;
+    
+    width: 600px;
+}
+
+
+.main{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    gap: 5px;
+    margin: 80px 60px 50px 60px;
+}
+.main .left_img{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.main .left_up{
+    display: flex;
+    flex-direction: row;
+}
+.main .top_img img{
+    width: 299px;
+    height: 300px;
+    margin: 0;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.main .bottom_img{
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+}
+.main .bottom_img img{
+    width: 100px;
+    height: 99.5px;
+    margin-right: 2px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.main .box{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main .box li{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.main button{
+    margin-top: 55px;
+    padding: 10px 30px;
+    border-radius: 15px;   
+    border-style: none;
+    background-color: #2157f8;
+    font-size: 15px;
+    color: white;
+    transition: background-color 0.15s;
+}
+.main button:hover{
+    cursor: pointer;
+    background-color: #537cf7;
+}
+.main .right_img{
+    width: 100%;
+    height: 500px;
+}
+.main .right_img img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.main .left_text p{
+    font-size: 12px;
+}
+
+
+
+/*.............contact us...........*/
+
+.sub-headerC
+{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../Images/galle.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-headerC h1
+{
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.contact
+{
+	position:relative;
+	min-height:10vh;
+	padding-left: 60px;
+    padding-right: 50px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+    background-size: cover;
+}
+.fa-map-marker{
+    color: #fff;
+}
+.fa-phone{
+    color: #fff;
+}
+.fa-envelope{
+    color: #fff;
+}
+.container 
+{
+     
+	justify-content:center;
+    display:flex;
+	align-items:center;
+	margin-top:30px;
+    width:100%   
+} 
+
+.container .contactinfo
+{
+    width:50%;
+	display:flex;
+	flex-direction:column;
+}
+.container .contactinfo .box
+{
+    position:relative;
+	padding:30px 0;
+	display:flex; 
+}
+.container .contactinfo .box .icon
+{
+    min-width:50px;
+	height:	50px;
+	background:#1b0086;
+    display: flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:60%;
+	font-size:25px;
+}
+.container .contactinfo .box .text
+{
+    display:flex;
+	margin-left:20px;
+	font-size:16px;
+	color:#ffffff;
+	flex-direction:column;
+	font-weight:300;
+}
+.container .contactinfo .box .text h3
+{
+    font-weight:500;
+	color:#00bcd4;
+}
+.container .contactinfo p{
+    color: #000000;
+}
+.contactform
+{
+	width: 40%;
+	padding:40px;
+	background:none ;
+}
+
+.contactform .h2
+{	
+	font-size:30px;
+	color:#333;
+	font-weight:500;
+}
+
+.contactform .inputbox
+{
+	position:relative;
+    color: none;
+	width:100%;
+	margin:10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border:none ;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform input{
+    border-radius: 10px;
+}
+.contactform textarea{
+    border-radius: 10px;
+}
+.contactform .inputbox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events:none;
+    transition: 0.5s;
+    color:nonr;
+}
+
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+{
+    color: #00bcd4;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"]
+{
+    width: 100px;
+    background:#00bcd4;
+    color:#fff;
+    border: 10px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+.Faq{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background:#ffffff;
+    border-radius: 10px;
+}
+.Faq_Q p{
+    margin: 5px;
+    padding: 0;
+    font-family: Verdana;
+    font-size: 20px;
+}
+.f h2{
+    text-align: center;
+}
+.f p{
+    text-align: center;
+}
+.Faq_A p{
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    background: rgb(82, 170, 122);
+    border-radius: 10px; 
+}
+.Faq:hover{
+    cursor: pointer;
+}
+.Faq_A {
+    display: none;
+} 
+.Faq.active .Faq_A {
+    display: block;
+}
+
+/*.............User page...........*/
+
+.sub-headerU{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../Images/Ubac1.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-headerU .logout a{
+    text-decoration: none;
+    color: white;
+}
+.checked {
+     color: orange
+}
+aside img{
+    width: 350px;
+    height: 223px;
+    
+    border-radius: 20px;
+}
+.main-leftU{
+    position: relative;
+    height: max-content;
+    top: 5.4rem;
+}
+
+.Uright h2{
+    text-align: center;    
+}
+.Uright table{
+    display: flex;
+    align-items: center;
+}
+
+.Uright img {
+    float: left;
+    border:3px solid #fff;
+    border-radius: 10px;
+    height:90px;
+    width:90px;
+   }
+
+.bookigs{
+    color: #000000;
+     
+} 
+
+.bookigs h3{
+    text-align: center;
+    font-size: 30px;
+} 
+.bookigs img{
+    height:150px;
+    width:200px;
+    border-radius: 10px;
+} 
+.bookigs b{
+    font-style:italic;
+}
+.bookigs table{
+    width: 700px;
+    box-align: center;
+}
+.right-containerC{
+    max-width: 700px;
+    width: 90%;
+    margin: 0 auto;
+}
+.Uright h2{
+    font-size: 25px;
+}
+
+/*==================ADMIN+++++++++++++++========*/
+
+.AdminHeader{
+    height: 13vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../Images/abcd.jpg);
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.AdminHeader .hed{
+    height: 100px;
+    width: 150px;
+    display: flex;
+    align-items: left;
+    padding-left: 30px;   
+}
+
+.heright ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    font-weight: 700;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 18vw auto 20vw;
+    position: relative;
+    column-gap: 2rem;
+}
+.main-left{
+    position: sticky;
+    height: max-content;
+    top: 5.4rem;
+}
+/*..................*/
+aside{
+    
+    margin-top: 1rem;
+    border-radius: 1rem;
+    
+}
+aside a{
+    text-decoration: none;
+}
+aside .menu-item{
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    position: relative;
+    cursor: pointer;
+    transition: 300ms ease all;
+    background-color: #fff;
+}
+aside .menu-item:hover{
+    background-color:hsl(252, 30%, 90%);
+}
+aside .menu-item i{
+    width: 1.8rem;
+    margin-left: 2rem;
+    position: relative;
+}
+aside .notify-counter{
+    background-color: red;
+    color: white;
+    width: fit-content;
+    font-size: .7rem;
+    border-radius: 30%;
+    padding: .1rem .4rem;
+    position: absolute;
+    top: .7rem;
+    left: 3.2rem;
+}
+aside .menu-item h3{
+    margin-left: 1.5rem;
+    font-size: 1rem;
+}
+aside .active{
+    background: hsl(252, 30%, 90%);
+}
+aside .active h3{
+    color: hsl(252, 75%, 60%);
+}
+aside .active::before{
+    content: '';
+    display: block;
+    width: .5rem;
+    height: 100%;
+    background:hsl(252, 75%, 60%);
+}
+aside .menu-item:nth-child(1){
+    overflow: hidden;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+aside .menu-item:nth-last-child(2){
+    overflow: hidden;
+    border-bottom-left-radius:2rem;
+    border-bottom-right-radius: 2rem;
+}
+.main-container .btn-logout{
+
+    border: 1px solid rgb(253, 253, 255);
+    padding: 4px 15px;
+    border-radius: 20px;
+    background-color: #2807ff;
+    color: white;
+    margin-left: 90px;
+}
+.main-container .btn-logout:hover{
+    background-color: #ff0202;
+}
+/*=================================================table in staff ============================================================*/
+.main-middle .feed- table{
+    font-size: 16px;
+    border-collapse:collapse;
+    text-align: left;
+    line-height: 50px;
+    width:1200px;
+    margin-left:-70px;
+}
+.main-middle .feed- table th{
+    background-color: #333;
+    color: white;
+    font-size: 12px;
+}
+.main-middle .feed- table td{
+    font-size: 15px;
+}
+.main-middle .feed- table td a{
+    text-decoration: none;
+    color: #fff; 
+    border: 1px solid #fff;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 20px;
+}
+.main-middle .feed- table td a.up{
+    background-color: rgb(27, 149, 2) ;
+    
+}
+.main-middle .feed- table td a.del{ 
+    background-color: rgb(255, 2, 2) ;
+
+}
+
+
+.editPersonals form{
+    
+    background-color: #f2f7f9;
+    box-shadow: #a5a5ff 3px 3px 20px 3px ;
+    height: 600px;
+    width: 800px;
+    line-height: 20px; 
+    border-radius: 30px; 
+    list-style: none;
+    padding: 20px;
+    
+}
+
+.editPersonals form label{
+    margin-left: 20px;
+}
+.editPersonals form input{
+    display: flex;
+    width: 750px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 15px;
+    font-size: 15px;
+    text-indent: 20px;
+}
+.add{
+    width: 100px;
+    height: 40px;
+    border-radius: 2rem;
+    background-color: #060ba0;
+    color: #fff;
+    margin-left: 43%;
+}
+.add:hover{
+    background-color: #ff0b07;
+    color: white;
+}
+/*Main middle Admin*/
+/*........Stories start..........*/
+.middle-container{
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/*....start feef aria....*/
+
+.feeds .feed{
+    background-color: white;
+    padding: 1rem;
+    border-radius:1rem;
+    margin: 1rem auto;
+    line-height: 1.5;
+    font-size: .85rem;
+    position: relative;
+    
+}
+.feeds .feed .feed-top{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.feed .feed-top .user{
+    display: flex;
+    gap: 1rem;
+    
+}
+.feed .feed-top .profile-picture img{
+    width: 2.6rem;
+}
+.feed-img{
+    overflow: hidden;
+    margin: .8rem 0;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*users admin=======================*/
+
+.edituc{
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+.edituc span{
+    font-size: 15px;
+}
+
+/*main-right+++==============================*/
+.main-right{
+    position: relative;
+    height: max-content;
+    top: 5.4rem;
+}
+.right-container{
+    max-width: 700px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.right-container h3{
+    text-align: center;
+}
+.editPersonal li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 2.5rem;
+}
+.save{
+    width: 60px;
+    height: 30px;
+    border-radius: 1rem;
+    background-color: #060ba0;
+    color: #fff;
+    margin-left: 90px;
+}
+
+
+
+/*....==========admin data changer==========....*/
+.feeds .admindeta{
+    margin-top: 25px;
+    margin-left: 100px;
+    background-color: #f2f7f9;
+    box-shadow: #a5a5ff 3px 3px 20px 3px ;
+    height: 400px;
+    width: 500px;
+    line-height: 16px; 
+    border-radius: 30px; 
+    list-style: none;
+    padding: 30px;
+    z-index: 900;
+}
+.feeds .admindeta p{
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 15%; 
+    line-height: 35px; 
+    font-weight: 700;
+}
+.feeds .admindeta h2{
+    text-align: center;
+    
+}
+/*....==========update admin data ==========....*/
+
+
+.up_ad form{
+    margin-top: 25px;
+    margin-left: 20%;
+    background-color: #f2f7f9;
+    box-shadow: #a5a5ff 3px 3px 20px 3px ;
+    height: 600px;
+    width: 800px;
+    line-height: 16px; 
+    border-radius: 30px; 
+    list-style: none;
+    padding: 30px;
+    z-index: 900;
+}
+.up_ad form label{
+    margin-left: 20px;
+}
+.up_ad form input{
+    display: flex;
+    width: 750px;
+    height: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    font-size: 15px;
+    text-indent: 20px;
+}
+.update{
+    width: 100px;
+    height: 40px;
+    border-radius: 2rem;
+    background-color: #060ba0;
+    color: #fff;
+    margin-left: 43%;
+}
+.update:hover{
+    background-color: #ff0b07;
+    color: white;
+}
+.up{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+}
+/*taxi=============================================*/
+.taxiD{
+    font-size: 16px;
+    border-collapse:collapse;
+    text-align: left;
+    line-height: 50px;
+    width:1200px;
+    margin-left:-70px;
+}
+.taxiD th{
+    background-color: #333;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+.taxiD td{
+    font-size: 15px;
+}
+.taxiD td a{
+    text-decoration: none;
+    color: #fff; 
+    border: 1px solid #fff;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 20px;
+}
+.taxiD td a.up{
+    background-color: rgb(27, 149, 2) ;
+    
+}
+.taxiD td a.del{ 
+    background-color: rgb(255, 2, 2) ;
+
+}
+
+.up_tax form{
+    margin-top: 50px;
+    margin-left: 20%;
+    background-color: #f2f7f9;
+    box-shadow: #a5a5ff 3px 3px 20px 3px ;
+    height: 300px;
+    width: 800px;
+    line-height: 16px; 
+    border-radius: 30px; 
+    list-style: none;
+    padding: 30px;
+    z-index: 900;
+}
+.up_tax form label{
+    margin-left: 20px;
+}
+.up_tax form input{
+    display: flex;
+    width: 750px;
+    height: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    font-size: 15px;
+    text-indent: 20px;
+}
+.up_tax h2{
+    margin-top: 100px;
+}
+.update{
+    width: 100px;
+    height: 40px;
+    border-radius: 2rem;
+    background-color: #060ba0;
+    color: #fff;
+    margin-left: 43%;
+}
+.update:hover{
+    background-color: #ff0b07;
+    color: white;
+}
+.up{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+/*Manager====================================================================*/
+
+.editPersonalm form{
+    
+    background-color: #f2f7f9;
+    box-shadow: #a5a5ff 3px 3px 20px 3px ;
+    height: 700px;
+    width: 800px;
+    line-height: 11px; 
+    border-radius: 30px; 
+    list-style: none;
+    padding: 20px;
+    
+}
+
+
+.editPersonalm form label{
+    margin-left: 20px;
+}
+.editPersonalm form input{
+    display: flex;
+    width: 750px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 15px;
+    font-size: 15px;
+    text-indent: 20px;
+}
+.add{
+    width: 100px;
+    height: 40px;
+    border-radius: 2rem;
+    background-color: #060ba0;
+    color: #fff;
+    margin-left: 43%;
+}
+.add:hover{
+    background-color: #ff0b07;
+    color: white;
+}
+
+/*taxi=============================================*/
+.MID{
+    font-size: 16px;
+    border-collapse:collapse;
+    text-align: left;
+    line-height: 50px;
+    width:1200px;
+    margin-left:-70px;
+}
+.MID th{
+    background-color: #333;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+.MID td{
+    font-size: 15px;
+}
+.MID td a{
+    text-decoration: none;
+    color: #fff; 
+    border: 1px solid #fff;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 20px;
+}
+.MID td a.up{
+    background-color: rgb(27, 149, 2) ;
+    
+}
+.MID td a.del{ 
+    background-color: rgb(255, 2, 2) ;
+
+}
+
+
+
+
+
+.up_ad .hotel{
+    margin-top: 100px;
+    margin-left: 20%;
+    background-color: #f2f7f9;
+    box-shadow: #a5a5ff 3px 3px 20px 3px ;
+    height: 300px;
+    width: 800px;
+    line-height: 16px; 
+    border-radius: 30px; 
+    list-style: none;
+    padding: 30px;
+    z-index: 900;
+}
+.editPersonalh form{
+    
+    background-color: #f2f7f9;
+    box-shadow: #a5a5ff 3px 3px 20px 3px ;
+    height: 250px;
+    width: 800px;
+    line-height: 11px; 
+    border-radius: 30px; 
+    list-style: none;
+    padding: 20px;
+    
+}
+.editPersonalh form label{
+    margin-left: 20px;
+}
+.editPersonalh form input{
+    display: flex;
+    width: 750px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 15px;
+    font-size: 15px;
+    text-indent: 20px;
+}

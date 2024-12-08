@@ -1,0 +1,16 @@
+Reference:
+
+	https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css
+	https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+	https://swiperjs.com/
+	https://www.bootstrapcdn.com/fontawesome/
+	https://fonts.google.com/
+	https://youtu.be/p1GmFCGuVjw?si=wNW6M3AK1K97GEIE
+
+
+	//The php code was written by human but the code was uploaded to Chart GPT 3.1 for Error checking and refered youtube video.
+	
+	https://chat.openai.com
+	https://youtu.be/NqP0-UkIQS4?si=NKii0YekjiAF4CM9
+	https://youtu.be/5W2qazb1-7c?si=lfuMUMqeFUminhOQ
+
